@@ -39,8 +39,9 @@ app.post('/users', (req, res) => {
         password: data.password,
         age: data.age
     }
+
     users.push(newUser)
-    res.json(newUser)
+    res.status(201).json(newUser)
     
 })
 
